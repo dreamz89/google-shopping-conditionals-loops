@@ -1,0 +1,23 @@
+.container {
+  width: 90%;
+  margin: 0 auto; // floating in the center
+}
+
+.left-content, .right-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.left-content {
+  width: 65%;
+}
+
+.right-content {
+  width: 30%;
+}
+
+.left-divs, .right-divs {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}

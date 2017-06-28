@@ -17,13 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Starter code. List out items' name into the shopping list
     // HINT: EVERY FUNCTIONS HERE WILL BE ABLE TO ACCESS THE items VARIABLE
+
+      // Function to add one product title to the shopping list
     function listGenerator (item) {
       var listItem = document.createElement('li')
       listItem.textContent = item.product.title
       shoppingList.appendChild(listItem)
     }
+
+      // Add product title for every item
     items.forEach(listGenerator)
 
+      // Extract specified brand into an array
     function getItemsByBrand (items, brand) {
       var brandItems = []
       for (var i = 0; i < items.length; i++) {
@@ -41,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     filterBrand.forEach(listGenerator)
     })
 
+      //Extract specified authors into an array
     function getItemsByAuthor (items, author) {
       var authorItems = []
       for (var i = 0; i < items.length; i++) {
