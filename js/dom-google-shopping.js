@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return brandItems
     }
 
+      // Show brand only when search button is clicked
     document.querySelector('#searchBrand').addEventListener('click', function () {
     shoppingList.innerHTML = ''
     var searchBrand = document.getElementById('Bd').value
@@ -57,13 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
       return authorItems
     }
 
+      // Show author only when search button is clicked
     document.querySelector('#searchAuthor').addEventListener('click', function () {
     shoppingList.innerHTML = ''
     var searchAuthor = document.getElementById('Ar').value
-    var filterAuthor = getItemsByBrand(items, searchAuthor)
+    var filterAuthor = getItemsByAuthor(items, searchAuthor)
     filterAuthor.forEach(listGenerator)
     })
 
+      //Add last shopping item to cart
     var cartButton = document.querySelector('#cartButton')
     cartButton.addEventListener('click', addToCart)
 
